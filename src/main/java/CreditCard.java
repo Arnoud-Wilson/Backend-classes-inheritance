@@ -1,4 +1,4 @@
-public class CreditCard {
+public abstract class CreditCard {
     private int debt;
 
     public CreditCard(int debt) {
@@ -11,5 +11,8 @@ public class CreditCard {
 
     public void setDebt(int debt) {
         this.debt = debt;
+    }
+    public void pay(int amount) {
+        debt += amount;
     }
 }
